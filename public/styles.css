@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+body {
+  font-size: 16px;
+  font-family: Kanit;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+  width: 300px;
+  border-radius: 5px;
+  font: Kanit;
+}
+input[type=text]::placeholder {
+  text-align: center;
+  font: 16px Kanit;
+}
+.autocomplete-items {
+  position: absolute;
+  /* border: 1px solid #d4d4d4; */
+  border: 2px solid #3B71CA;
+  border-top: none;
+  border-radius: 5px;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  height: 195px;
+  background-color: #fff;
+}
+.autocomplete-items li {
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items li:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+td, th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#deleteBtn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#deleteBtn p {
+  color: #fff;
+  padding: 10px;
+  padding-right: 55px;
+  width: 60px;
+  background-color: #DC4C64;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+#deleteBtn p:hover {
+  background-color: #b83e52;
+}
+.container {
+  text-align: center;
+}
+#addBtn {
+  display: inline;
+}
+#addBtn p {
+  display: inline;
+  background-color: #14A44D;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#addBtn p:hover {
+  background-color: #11843f;
+}
+.hideTable {
+  display: none;
+}
