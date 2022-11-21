@@ -2,6 +2,7 @@
 body {
   font-size: 16px;
   font-family: Kanit;
+  margin: 0px;
 }
 .autocomplete {
   /*the container must be positioned relative:*/
@@ -100,5 +101,37 @@ tr:nth-child(even) {
   background-color: #11843f;
 }
 .hideTable {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+}
+header {
+  background-color: #14A44D;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+footer {
+  background-color: #14A44D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+#firebase-icon {
+  height: 40px;
+  width: 40px;
+}
+#github-icon {
+  height: 30px;
+  width: 30px;
 }
